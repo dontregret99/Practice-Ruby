@@ -8,4 +8,4 @@ def seperate_even_odd(arr)
     result.push(odd)
     result
 end
-p seperate_even_odd([1,2,3,4,5,6,7,8])
+p seperate_even_odd([1, 2, 3, 4, 5, 6, 7, 8])

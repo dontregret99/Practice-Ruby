@@ -4,4 +4,4 @@ def sum(arr)
     result
 end
 
-puts sum([1,2,3,4,5])
+puts sum([1, 2, 3, 4, 5])

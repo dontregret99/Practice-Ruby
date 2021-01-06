@@ -4,4 +4,4 @@ def increase_two(arr)
     result
 end
 
-puts increase_two([1,2,3,4,5])
+puts increase_two([1, 2, 3, 4, 5])

@@ -1,5 +1,5 @@
 def multiply(a,b)
-    a*b
+    a * b
 end
 
 a = gets.to_i

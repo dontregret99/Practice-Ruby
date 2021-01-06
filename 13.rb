@@ -1,5 +1,5 @@
 class Car
-    def initialize(year, model, color, current_speed=0)
+    def initialize(year, model, color, current_speed = 0)
         @year = year
         @model = model
         @color = color
@@ -44,7 +44,7 @@ class Car
     end
 end
 
-lumina = Car.new(1997, 'chevy lumina','white')
+lumina = Car.new(1997, 'chevy lumina', 'white')
 puts lumina.speed_up(20)
 puts lumina.speed_up(40)
 puts lumina.current_speed

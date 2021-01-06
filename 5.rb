@@ -7,7 +7,7 @@ def remove_first_last_two_char(str)
     # use pos + .each as .each_with_index
     pos = 0
     str.split('').each do |c|
-        result += c if (pos != 0 && pos != 1 && pos != len-1 && pos != len-2)
+        result += c if pos.between?(2,len-3)
         pos += 1
     end
     result

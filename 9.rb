@@ -1,6 +1,6 @@
 def increase_two(arr)
     result = []
-    arr.each {|i| result.push(i+2)}
+    arr.each {|i| result.push(i + 2)}
     result
 end
 

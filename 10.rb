@@ -2,10 +2,8 @@ def seperate_even_odd(arr)
     odd = []
     even = []
     result = []
-    arr.each do |i|
-        odd.push(i) if i % 2 != 0
-        even.push(i) if i % 2 == 0
-    end
+    arr.each { |i| i.even? ? even.push(i) : odd.push(i)}
+
     result.push(even)
     result.push(odd)
     result

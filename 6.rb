@@ -3,6 +3,6 @@ def count_to_zero(n)
         print n
     else
         print "#{n} "
-        count_to_zero(n-1)
+        count_to_zero(n - 1)
     end
 end

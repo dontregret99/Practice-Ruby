@@ -1,35 +1,17 @@
-class MyFile
+class Exporter
     attr_accessor :data
 
     def initialize(data)
         @data = data
     end
-
-    def to_csv(destination_path)
-        puts "You export data #{@data} as csv into #{destination_path}"
-    end
-
-    def to_xml(destination_path)
-        puts "You export data #{@data} as xml into #{destination_path}"
-    end
-
-    def to_json(destination_path)
-        puts "You export data #{@data} as json into #{destination_path}"
-    end
-
-    def to_pdf(destination_path)
-        puts "You export data #{@data} as pdf into #{destination_path}"
+    ['csv', 'xml', 'json', 'pdf'].each do |type|
+        define_method("export_as_#{type}") do |destination_path|
+            puts "You export data #{@data} as #{type} into #{destination_path}"
+        end
     end
 end
 
-class Exporter    
-    def initialize(file)
-        @file = file
-    end
+e = Exporter.new('abc')
+e.export_as_abc('abc.txt')
 
-    def export_as(action, destination_path)
-        @file.send(action, destination_path)
-    end
-end
-export = Exporter.new(MyFile.new('abc'))
-export.export_as("to_pdf",'abc.csv')
+

@@ -11,7 +11,4 @@ class Exporter
     end
 end
 
-e = Exporter.new('abc')
-e.export_as_abc('abc.txt')
-
 
